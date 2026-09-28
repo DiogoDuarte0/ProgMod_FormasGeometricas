@@ -30,7 +30,7 @@ public class Quadrado extends PoligonoReto{
      * @param lado Lado para o quadrado. Valor deve ser igual ou maior a 1, ou será corrigido para 1.
      */
     public Quadrado(double lado){
-        //TODO
+        super("QUADRADO", lado, lado);
     }
 
     /**
@@ -39,7 +39,8 @@ public class Quadrado extends PoligonoReto{
      */
     @Override
     public double area(){
-        //TODO
+        double area = base * altura;
+        return area;
     }
 
     /**
@@ -48,7 +49,8 @@ public class Quadrado extends PoligonoReto{
      */
     @Override
     public double perimetro(){
-        //TODO
+        double perimetro = (base *2) + (altura*2);
+        return perimetro;
     }
 
     /**
